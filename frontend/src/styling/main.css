@@ -1,0 +1,31 @@
+:root {
+    /* body */
+    --body: {
+        font-family: sans-serif;
+        margin:0;
+        padding:0;
+    };
+
+    /*Background colors*/
+    --primary-background: hsl(44, 51.72%, 90.31%);
+    --secondary-background: hsl(44, 51.72%, 94.31%);
+    --third-background: hsl(44, 51.72%, 98.31%);
+    --border-color: hsl(212 0% 58%);
+
+    /* Secondary color */
+    --secondary-color: hsl(14.35, 95.04%, 52.55%);
+
+    /* Text*/
+    --primary-fontsize: 40px;
+    --secondary-fontsize: 30px;
+    --third-fontsize: 16px;
+    --text-color: var(--secondary-color);
+
+     /* Boxes  */
+    --box-padding: 15px 15px;
+    --box-border: 2px solid var(--border-color);
+    --box-secondary-background: var(--secondary-background);
+    --box-third-background: var(--third-background);
+    --border-radius: 12px;
+
+}
