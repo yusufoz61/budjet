@@ -1,2 +1,33 @@
 @import url('main.css');
 
+#homecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+#homepage {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--box-secondary-background);
+    border: var(--box-border);
+    padding: var(--box-padding);
+    border-radius: var(--border-radius);
+
+    margin: 0;
+}
+
+#title {
+    font-size: var(--primary-fontsize);
+    color: var(--text-color);
+    height: 150px;
+
+}
+
+#text {
+    font-size: var(--text-fontsize);
+}

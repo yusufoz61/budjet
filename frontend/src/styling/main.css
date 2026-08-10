@@ -8,7 +8,7 @@
 
     /*Background colors*/
     --primary-background: hsl(44, 51.72%, 90.31%);
-    --secondary-background: hsl(44, 51.72%, 94.31%);
+    --secondary-background: hsl(44, 51.72%, 91.71%);
     --third-background: hsl(44, 51.72%, 98.31%);
     --border-color: hsl(212 0% 58%);
 
@@ -18,7 +18,8 @@
     /* Text*/
     --primary-fontsize: 40px;
     --secondary-fontsize: 30px;
-    --third-fontsize: 16px;
+    --third-fontsize: 20px;
+    --text-fontsize: 16px;
     --text-color: var(--secondary-color);
 
      /* Boxes  */
@@ -31,6 +32,8 @@
 
 
 body{
-    var(--body);
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
     background-color: var(--primary-background);
 }

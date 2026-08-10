@@ -4,7 +4,7 @@ class MyNavBar extends HTMLElement {
         <nav id="navbar">
             <ul>
                 <li><a href="../pages/home.html">Home</a></li>
-                <li><a href="../pages/budget.html">Budget</a></li>
+                <li><a href="../pages/budjet.html">Budjet</a></li>
             </ul>
         </nav>    
         `;
