@@ -1,10 +1,12 @@
 class MyNavBar extends HTMLElement {
     connectedCallback() {
         this.innerHTML =`
+        <nav id="navbar">
             <ul>
                 <li><a href="../pages/home.html">Home</a></li>
                 <li><a href="../pages/budget.html">Budget</a></li>
             </ul>
+        </nav>    
         `;
     }
 }

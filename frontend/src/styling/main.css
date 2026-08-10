@@ -27,5 +27,10 @@
     --box-secondary-background: var(--secondary-background);
     --box-third-background: var(--third-background);
     --border-radius: 12px;
+}
 
+
+body{
+    var(--body);
+    background-color: var(--primary-background);
 }

@@ -1,0 +1,7 @@
+@import url('main.css');
+
+#navbar ul {
+    background-color: var(--primary-background);
+    list-style-type: none;
+
+}
