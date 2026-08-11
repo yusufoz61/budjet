@@ -8,8 +8,8 @@
 
     /*Background colors*/
     --primary-background: hsl(44, 51.72%, 90.31%);
-    --secondary-background: hsl(44, 51.72%, 91.71%);
-    --third-background: hsl(44, 51.72%, 98.31%);
+    --secondary-background: hsl(44, 51.72%, 92.71%);
+    --third-background: hsl(44, 51.72%, 95.31%);
     --border-color: hsl(212 0% 58%);
 
     /* Secondary color */
@@ -23,7 +23,7 @@
     --text-color: var(--secondary-color);
 
      /* Boxes  */
-    --box-padding: 15px 15px;
+    --box-padding: 15px 0px;
     --box-border: 2px solid var(--border-color);
     --box-secondary-background: var(--secondary-background);
     --box-third-background: var(--third-background);
