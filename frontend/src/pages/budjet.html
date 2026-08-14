@@ -19,16 +19,19 @@
 <div id="main-container">
     <div id="content-container">
         <div id="category-container">
+
             <div id="category-title">
                 <p class="item cat-title">Categories</p>
             </div>
+            <my-category>
             <div id="category-add-input">
-                <p>Add category</p>
-                <input class="item cat-add"/>
+                    <label for="add-input">Add Category</label>
+                    <input type="text" id='add-input' name="add-input" class="item cat-add" placeholder=" add category"/>
             </div>
             <div id="category-shown">
-                <p class="item cat-shown">shown</p>
+                <div id="cat-items"></div>
             </div>
+            </my-category>
         </div>
         <div id="expenses-container"></div>
     </div>
@@ -36,5 +39,6 @@
 
 
 <script src="../components/navbar.js" defer></script>
+<script src="../components/category.js" defer></script>
 </body>
 </html>

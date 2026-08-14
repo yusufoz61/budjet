@@ -1,5 +1,10 @@
 @import url('main.css');
 
+my-category {
+    display: block;
+}
+
+
 #main-container {
     flex: 1;
 
@@ -44,20 +49,35 @@
 #category-add-input {
     grid-area: 5 / 1 / 8 / 3;
     background-color: var(--third-background);
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
     padding: var(--box-padding);
+    gap:12px;
 }
 
 #category-shown {
     grid-area: 5 / 3 / 8 / 7;
-    background-color: var(--third-background);
+    background-color: green;
+
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 18px;
 }
 
 
 .item {
     margin: 0;
-    padding: 0 14px;
+}
+
+#add-input  {
+    height: 75%;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+}
+
+#add-input:focus {
+    outline: 1px solid #b4b4b4;
 }
 
 
@@ -65,4 +85,9 @@
 #expenses-container {
     grid-area: 3 / 1 / 9 / 9;
     background-color: blueviolet;
+}
+
+#cat-items {
+
+    background-color: aqua;
 }
