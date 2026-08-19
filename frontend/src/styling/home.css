@@ -30,4 +30,10 @@
 
 #text {
     font-size: var(--text-fontsize);
+    padding: 0 14px;
+}
+
+#title {
+    display:flex;
+    justify-content: center;
 }

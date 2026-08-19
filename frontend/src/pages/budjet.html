@@ -16,29 +16,14 @@
         <my-navbar></my-navbar>
     </nav>
 </header>
-<div id="main-container">
-    <div id="content-container">
-        <div id="category-container">
-
-            <div id="category-title">
-                <p class="item cat-title">Categories</p>
-            </div>
-            <my-category>
-            <div id="category-add-input">
-                    <label for="add-input">Add Category</label>
-                    <input type="text" id='add-input' name="add-input" class="item cat-add" placeholder=" add category"/>
-            </div>
-            <div id="category-shown">
-                <div id="cat-items"></div>
-            </div>
-            </my-category>
-        </div>
-        <div id="expenses-container"></div>
-    </div>
-</div>
+<article>
+    <my-budjet></my-budjet>
+</article>
 
 
-<script src="../components/navbar.js" defer></script>
-<script src="../components/category.js" defer></script>
+
+<script src="../components/header/navbar.js" defer></script>
+<script src="../components/body/budjet/category.js" defer></script>
+<script src="../components/body/budjet/budjet.js" defer></script>
 </body>
 </html>
