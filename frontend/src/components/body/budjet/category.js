@@ -1,5 +1,4 @@
-class Category extends HTMLElement {
-
+class MyCategory extends HTMLElement {
     category = '';
     id = 0;
 
@@ -20,37 +19,36 @@ class Category extends HTMLElement {
             </div>
         `;
 
-        const addedCat = document.querySelector('#add-input');
-        addedCat.addEventListener("keydown", (event) =>{
-            if(event.code === 'Enter'){
-                console.log('enter', event.code);
+        this.shownContainer = this.querySelector('#category-shown');
+
+        const addedCat = this.querySelector('#add-input');
+        addedCat.addEventListener("keydown", (event) => {
+            if (event.code === 'Enter') {
                 this.category = addedCat.value;
-                if(this.category != null){
+                if (this.category.trim() !== '') {
                     this.processCategory();
+                    addedCat.value = '';
                 }
             }
-        })
+        });
     }
 
     processCategory() {
-        const items = document.querySelector("#category-shown");
-        const idCheck = document.querySelectorAll('[data-label="cat-items"]');
-        if(idCheck === null){
-            this.id = 0;
-        }else{
-            this.id += 1;
-        }
-        items.innerHTML = `
-            <div id="${this.id}" class='items-shown' data-label="cat-items">
-                <p>${this.category}</p>
-            </div>
-            `;
+        const idCheck = this.querySelectorAll('[data-label="cat-items"]');
+        this.id = idCheck.length; // count existing items → next unique id
+
+        const item = document.createElement('div');
+        item.id = `cat-${this.id}`; // prefixed so it won't collide with other ids on the page
+        item.className = 'items-shown';
+        item.dataset.label = 'cat-items';
+
+        const text = document.createElement('p');
+        text.textContent = this.category; // safe: dynamic value via textContent
+
+        item.appendChild(text);
+        this.shownContainer.appendChild(item); // append, don't replace
+
         this.category = '';
-
     }
-
-
-
 }
-
-customElements.define('my-category', Category);
+customElements.define('my-category', MyCategory);
