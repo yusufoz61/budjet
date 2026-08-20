@@ -1,16 +1,32 @@
 @import url('main.css');
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 my-category {
-    display: block;
+    display: contents;
 }
 
 
 #main-container {
     flex: 1;
-
+    min-height: 0;
     display: grid;
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(10, 1fr);
+}
+
+#main-container > *,
+#content-container > *,
+#category-container > * {
+    min-height: 0;
+    min-width: 0;
+}
+
+#main-container > * {
+    overflow: hidden;
 }
 
 #content-container {
@@ -90,4 +106,15 @@ my-category {
 #cat-items {
 
     background-color: aqua;
+}
+#category-shown {
+    gap:4px;
+}
+
+.items-shown {
+    background-color: var(--secondary-background);
+    padding: 0 5px;
+    border: 1px solid grey;
+    border-radius: 8px;
+
 }

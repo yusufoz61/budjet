@@ -2,6 +2,7 @@ class MyCategory extends HTMLElement {
     category = '';
     id = 0;
 
+    // writes the input and creates the container to display categories
     connectedCallback() {
         this.innerHTML = `
             <div id="category-add-input">
@@ -21,6 +22,9 @@ class MyCategory extends HTMLElement {
 
         this.shownContainer = this.querySelector('#category-shown');
 
+        // creates and eventlistener to see if user clicked Enter
+        // then adds the input value to this.category
+        // at last calls func processcategory to idisplay added category
         const addedCat = this.querySelector('#add-input');
         addedCat.addEventListener("keydown", (event) => {
             if (event.code === 'Enter') {
